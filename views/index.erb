@@ -1,1 +1,33 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+  <h1> Hello! This is embedded ruby file. </h1>
+  <p>
+    My name is <%=@name%>
+  </p>
+  <p>I'm going to pick a number from 1 to 100</p>
+  <p> <%=@rand=rand(1..100)%></p>
+  <p> The random number I picked is <% if @rand%2==0%></p>
+  
+       <p> even </p>
+       <%else%>
+       <p> odd</p>
+       <%end%>
+ </p>
+ 
+ <h1>I will pick 2 numbers from 1 to 100</h1>
+<h1>The 2 numbers I picked are <%=@number1=rand(1..100)%>,<%=@number2=rand(1..100)%> </h1>
+ <p>  The awnser is <%=@number1 + @number2%></p>
+ 
+ 
+ 
+ 
+ 
+  </body>
+</html>
+
+
+
 
